@@ -1,16 +1,67 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React to showcase my projects, technical skills, and academic background.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This site highlights my work in full-stack development, software systems, and mathematics of computation. It includes project descriptions, links to GitHub repositories, and information about my background.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive homepage
+- Project showcase section
+- About section
+- Contact and GitHub links
+- Clean academic-style design
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+
+## Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/daanniill/daniilmalakhov.github.io.git
+cd daniilmalakhov.github.io
+npm install
+npm run dev
+```
+
+## Deployment
+
+This project is intended to be deployed using GitHub Pages.
+
+To build the project:
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```bash
+src/
+├── assets/
+├── components/
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## Author
+
+**Daniil Malakhov**
+
+UCLA Mathematics of Computation student interested in software engineering, full-stack development, and mathematical computing.
+
+- GitHub: [daanniill](https://github.com/daanniill)
+
+## License
+
+This project is open source and available under the MIT License.

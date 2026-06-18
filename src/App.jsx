@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Hero from '../components/Hero/Hero'
+import Hero from './components/Hero/Hero'
 
 function App() {
 
