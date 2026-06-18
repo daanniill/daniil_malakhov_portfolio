@@ -3,7 +3,7 @@ import './Hero.css';
 function Hero() {
   return (
     <section className="hero" id="hero">
-     <div className="hero-content">
+      <div className="hero-content">
 
         <p className="hero-highlight">UCLA Mathematics of Computation - Full-stack Developer</p>
 
@@ -20,14 +20,14 @@ function Hero() {
 
           <a 
             href="#projects" 
-            className="hero-button primary"
+            className="button button-primary"
           >
             View Projects
           </a>
 
           <a
             href="https://github.com/daanniill"
-            className="hero-button secondary"
+            className="button button-secondary"
             target="_blank"
             rel="noreferrer"
           >
@@ -36,7 +36,7 @@ function Hero() {
 
           <a 
             href="https://www.linkedin.com/in/daniil-malakhov-8420a0210/" 
-            className="hero-button secondary" 
+            className="button button-secondary" 
             target="_blank" 
             rel="noreferrer"
           >
