@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#home,
+#projects,
+#contact {
+  scroll-margin-top: 5rem;
+}
+
+.projects-section,
+.contact-section {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.section-title {
+  margin: 0 0 2rem;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 2rem;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-section p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.contact-section a {
+  color: var(--accent-dark);
+}
