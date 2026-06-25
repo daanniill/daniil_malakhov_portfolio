@@ -6,7 +6,7 @@
       "subtitle": "Student matching and messaging platform",
       "summary": "A full-stack application that helps students find study partners based on shared classes and availability.",
       "description": "StudySearcher allows students to create profiles, add classes, find compatible study partners, and communicate through real-time messaging.",
-      "image": "/images/projects/study-searcher.png",
+      "image": "/projects/study-searcher.png",
       "startDate": "May 2026",
       "endDate": "June 2026",
       "technologies": [
@@ -32,7 +32,7 @@
       "subtitle": "Portfolio and technical blog",
       "summary": "A responsive personal portfolio built to showcase software projects, experience, and homelab writing.",
       "description": "A React portfolio with reusable project components, JSON-managed content, and a technical blog.",
-      "image": "/images/projects/portfolio.png",
+      "image": "/projects/portfolio.png",
       "startDate": "June 2026",
       "endDate": "Present",
       "technologies": [
@@ -56,7 +56,7 @@
       "subtitle": "Server monitoring and incident dashboard",
       "summary": "A planned dashboard for monitoring servers, services, resource usage, and system incidents.",
       "description": "The dashboard will provide a central interface for viewing Proxmox nodes, system metrics, service health, and flight-recorder incident data.",
-      "image": "/images/projects/homelab-dashboard.png",
+      "image": "/projects/servers.png",
       "startDate": "June 2026",
       "endDate": "",
       "technologies": [
