@@ -1,41 +1,113 @@
-import "./ProjectCard.css"
+import "./ProjectCard.css";
 
-function ProjectCard({ title, description, tags, githubLink, liveLink }) {
+function ProjectCard({
+  title,
+  subtitle,
+  summary,
+  description,
+  image,
+  startDate,
+  endDate,
+  technologies = [],
+  highlights = [],
+  links = {},
+}) {
+  const dateRange =
+    startDate && endDate
+      ? `${startDate} – ${endDate}`
+      : startDate || endDate || "";
+
   return (
-    <div className="project-card">
-      <h3 className="project-title">{title}</h3>
-      <p className="project-description">{description}</p>
-      <div className="project-tags">
-        {tags.map((tag, index) => (
-          <span key={index} className="project-tag">
-            {tag}
-          </span>
-        ))}
-      </div>
-      <div className="project-links">
-        {githubLink && (
-          <a
-            href={githubLink}
-            className="project-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
+    <article className="project-card">
+      {image && (
+        <div className="project-image-container">
+          <img
+            src={image}
+            alt={`${title} project preview`}
+            className="project-image"
+          />
+        </div>
+      )}
+
+      <div className="project-content">
+        <div className="project-header">
+          <div>
+            <h3 className="project-title">{title}</h3>
+
+            {subtitle && (
+              <p className="project-subtitle">{subtitle}</p>
+            )}
+          </div>
+
+          {dateRange && (
+            <p className="project-dates">{dateRange}</p>
+          )}
+        </div>
+
+        {summary && (
+          <p className="project-summary">{summary}</p>
         )}
-        {liveLink && (
-          <a
-            href={liveLink}
-            className="project-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Live Demo
-          </a>
+
+        {description && (
+          <p className="project-description">{description}</p>
+        )}
+
+        {technologies.length > 0 && (
+          <div className="project-technologies">
+            {technologies.map((technology) => (
+              <span
+                key={technology}
+                className="project-technology"
+              >
+                {technology}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {highlights.length > 0 && (
+          <div className="project-highlights">
+            <h4 className="project-highlights-title">
+              Highlights
+            </h4>
+
+            <ul className="project-highlights-list">
+              {highlights.map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {(links.github || links.demo) && (
+          <div className="project-links">
+            {links.github && (
+              <a
+                href={links.github}
+                className="project-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            )}
+
+            {links.demo && (
+              <a
+                href={links.demo}
+                className="project-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Demo
+              </a>
+            )}
+          </div>
         )}
       </div>
-    </div>
+    </article>
   );
 }
 
-export default ProjectCard
+export default ProjectCard;
+
