@@ -2,7 +2,7 @@ import "./Interests.css";
 
 function Interests() {
   return (
-    <section className="interests-section">
+    <section className="interests-section" id="interests">
       <h2 className="interests-title">Interests</h2>
       <p className="interests-description">
         Aside from math and programming, I have a large passion for video games and video game consoles.

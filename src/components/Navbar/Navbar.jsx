@@ -29,6 +29,11 @@ function Navbar() {
             </a>
           </li>
           <li className="navbar-item">
+            <a href="#interests" className="navbar-link">
+              Interests
+            </a>
+          </li>
+          <li className="navbar-item">
             <a href="#contact" className="navbar-link">
               Contact
             </a>
